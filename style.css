@@ -59,9 +59,18 @@ header {
     display: flex;
 }
 
+h1 {
+    font-size: 1.4rem;
+}
+
 /*Media Header and nav*/
 
 @media (max-width: 605px) {
+
+    h1 {
+        margin-top:2rem;
+    }
+
     nav {
         flex-wrap: wrap-reverse;
     }
@@ -279,6 +288,233 @@ input:focus{
 }
 
 /*Section 1*/
+
 /*Hébergement*/
+.main__section__one{
+    display: flex;
+}
+
+.main__section__title{
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+}
+
+.main__section__hebergements{
+    background-color: var(--couleur-gris);
+    flex: 2;
+    height: 45rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+}
+
+.main__section__column__one{
+    display: flex;
+    margin-bottom: 4rem;
+    height: 15rem;
+    justify-content: space-around;
+}
+
+.main__section__column__two{
+    display: flex;
+    height: 15rem;
+    justify-content: space-around;
+}
+
+.section__card__hebergement{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem white solid ;
+    background-color: #fff;
+    border-radius: 1rem; 
+    box-shadow: -1px 2px 13px 5px rgba(94, 91, 91, 0.47);
+}
+
+.section__card__hebergement:hover {
+    transform: scale(1.1);
+}
+
+.hebergement__picture{
+    height:9.5rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+.hebergement__showmore{
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 3rem 0 0 3rem; 
+}
+
+.section__card__content{
+    line-height: 1.8rem; 
+    padding-left: 1rem;
+}
+
+.main__section__price {
+    font-weight: bold;
+}
+
+#star__blue {
+    color: var(--couleur-bleu);
+}
+
+#star__grey {
+    color: rgb(207, 202, 202);
+}
+
+/* Populaire */
+
+.main__section__populaire{
+    background-color: var(--couleur-gris);
+    flex: 1;
+    height: 45rem;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.main__section__populaire__title{
+    display: inline-flex;
+    width: 100%;
+    justify-content:space-around;
+}
+
+.populaire__picture{
+    height: 9rem;
+    width: 7rem;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.section__card__populaire{
+    width: 75%;
+    display: flex;
+    border: 0.1rem white solid ;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: -1px 2px 13px 5px rgba(94, 91, 91, 0.47);
+}
+
+.section__card__populaire:hover{
+    transform: scale(1.1);
+}
+
+/*média section one*/
 
 
+@media (max-width: 1080px) {
+    .section__card__content{
+        padding-left: 1rem;
+        text-align: start;
+    }
+
+    .main__section__one{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+    } 
+
+    .main__section__column__one {
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        margin-bottom: auto;
+    
+    }
+
+    .main__section__column__two {
+        
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+    }
+    
+    .section__card__hebergement {
+        width: auto;
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+        
+    }
+
+    .main__section__hebergements {
+        width: auto;
+        margin-right: -0.2rem;
+        background-color: #fff;
+        
+    }
+
+    .main__section__populaire{
+        margin-left: 0.2rem;
+        
+    }
+
+    .section__card__populaire{
+        width: 60%;
+        margin-top: 2rem;
+    }
+
+    .populaire__picture{
+        height: 10rem;
+        width: 10rem;
+
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1370px) {
+    
+    .section__card__content{
+        line-height: 1.2rem; 
+        padding-left: 0.6rem;
+    }
+    
+    .section__card__populaire{
+        width:auto;
+    }
+}
+
+@media  (min-width: 200px) and (max-width: 750px) {
+
+    .section__card__content{
+        line-height: 1.2rem; 
+        padding-left: 0.6rem;
+    }
+
+    .section__card__populaire{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .main__section__populaire{
+        margin: 0 -2rem;
+        border-radius: 0rem;
+        padding: 1rem;
+    }
+    .main__section__title{
+        text-align: start;
+        padding-left: initial;
+    }
+
+    .populaire__picture{
+        height: 10rem;
+        width: 9rem;
+    }
+
+    .hebergement__picture{
+        height: 7rem;
+    }
+
+    .main__section__hebergements{
+        margin: 0 -1rem;
+    }
+
+    .hebergement__showmore{
+        text-align: start;
+        padding: 0 ;
+    }
+}
