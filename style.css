@@ -333,6 +333,7 @@ input:focus{
 
 .section__card__hebergement:hover {
     transform: scale(1.1);
+    transition: transform ease-in.2s;
 }
 
 .hebergement__picture{
@@ -355,11 +356,11 @@ input:focus{
     font-weight: bold;
 }
 
-#star__blue {
+.star__blue {
     color: var(--couleur-bleu);
 }
 
-#star__grey {
+.star__grey {
     color: rgb(207, 202, 202);
 }
 
@@ -402,6 +403,7 @@ input:focus{
 
 .section__card__populaire:hover{
     transform: scale(1.1);
+    transition: transform ease-in.2s;
 }
 
 /*média section one*/
@@ -483,6 +485,7 @@ input:focus{
     .section__card__content{
         line-height: 1.2rem; 
         padding-left: 0.6rem;
+        flex: 1;
     }
 
     .section__card__populaire{
@@ -517,4 +520,193 @@ input:focus{
         text-align: start;
         padding: 0 ;
     }
+}
+
+/* section two */
+#Activités {
+    padding-left: 2rem;
+    margin-top: 3.5em;
+    margin-bottom: 1rem;
+}
+
+.activités__picture__title{
+    padding-left: 1rem;
+    font-weight: 800;
+}
+
+.main__section__activités{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+}
+
+.section__activités{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+.section__activités__xl { 
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem white solid ;
+    background-color: #fff;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: -1px 2px 13px 5px rgba(94, 91, 91, 0.47);
+}
+
+.activités__picture__xl{
+    height: 35rem;
+    width: auto;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.section__activités__m {
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem white solid ;
+    background-color: #fff;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: -1px 2px 13px 5px rgba(94, 91, 91, 0.47);
+}
+
+.activités__picture__m{
+    max-height: 15rem;
+    width: auto;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.section__activités__bloc__m{
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+
+.section__activités__m:hover {
+    transform: scale(1.1);
+    transition: transform ease-in.2s;
+}
+
+.section__activités__xl:hover {
+    transform: scale(1.1);
+    transition: transform ease-in.2s;
+}
+
+/* média section two */
+
+@media (min-width: 1080px) and (max-width: 1620px) {
+
+    .activités__picture__m{
+        height: 10rem;
+        max-width: auto;
+    }
+    
+    .activités__picture__xl{
+        height: 25rem;
+        max-width: 15rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .section__activités {
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        flex-basis: 100%;
+
+    }
+
+    .activités__picture__m{
+        height: 8rem;
+        
+        
+    
+    }
+    
+    .activités__picture__xl{
+        height: 8rem;
+    
+        
+    }
+
+    .section__activités__m { 
+        height: 10rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        
+    }
+
+    .section__activités__xl {
+        max-width: 100%;
+        height: 10rem;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+    }
+
+    .main__section__activités{
+        display: flex;
+        margin-bottom: 1rem;
+        justify-content: center;
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+    
+    .activités__picture__title{
+        padding-top: 0.4rem;
+    }
+
+    #Activités {
+        margin-top: 2rem;
+    }
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--couleur-gris);
+    margin-top: 2rem;
+    padding: 2rem 0 0 4rem;
+    display: flex;
+}
+
+.footer__bloc {
+    margin-right: 15%;
+    margin-bottom: 3rem;
+    line-height: 2.5rem;
+}
+
+.footer__bloc__text {
+    margin-bottom: 0.6rem;
+
+}
+
+/* média footer */
+
+@media (min-width: 650px) and (max-width: 1080px){
+    .footer {
+        width: 100%;
+    }
+
+    .footer__bloc{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 650px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__bloc {
+        padding-right: 1rem;
+    }
+
 }
