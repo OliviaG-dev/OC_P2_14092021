@@ -232,7 +232,7 @@ input:focus{
     align-items: center;
 }
 
-#main__filter__items__icone{
+.main__filter__items__icone{
     color: var(--primary-color);
     background-color: var(--tertiary-color);
     border-radius: 50%;
@@ -616,7 +616,7 @@ input:focus{
 
     .activités__picture__m{
         height: 10rem;
-        max-width: auto;
+        max-width: 100%;
     }
     
     .activités__picture__xl{
