@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name= "description" content="Reservia est un site de location touristique">
+    <meta name="description" content="Reservia est un site de location touristique">
     <title>Reservia</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/7cc1ff1b73.js" crossorigin="anonymous"></script>
     <!-- Css -->
     <link rel="stylesheet" href="style.css">
@@ -16,27 +18,28 @@
 <body>
 
     <!-- Navigation and logo ***********************************************************************************************************************************************-->
-    <header>  
+    <header>
         <div class="header__logo">
             <img src="images/logo/Reservia.svg" alt="logo de l'agence de voyage reservia" id="logo-menu">
-        </div>  
+        </div>
         <nav>
             <div class="header__menu__item">
                 <a href="#Hébergements">Hébergements</a>
                 <a href="#Activités">Activités</a>
-            </div>    
-                <a href="#Inscription" class="header__menu__item__bold">S'inscrire</a>  
+            </div>
+            <a href="#Inscription" class="header__menu__item__bold">S'inscrire</a>
         </nav>
     </header>
 
     <main>
-    <!-- title ***********************************************************************************************************************************************-->
+
+        <!-- title ***********************************************************************************************************************************************-->
         <div>
             <h1 class="main__title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="main__describe">En plein centre ville ou en pleine nature</p>
         </div>
 
-    <!-- Search ***********************************************************************************************************************************************-->
+        <!-- Search ***********************************************************************************************************************************************-->
         <div class="main__search">
             <i class="fas fa-map-marker-alt" id="main__search__icone"></i>
             <input type="search" placeholder="Marseille, France">
@@ -46,233 +49,256 @@
             </button>
         </div>
 
-    <!--Filter ***********************************************************************************************************************************************-->
-
-    <div class="main__filter">
-        <div class="main__filter__title">
-            <h3>Filtres</h3>
-        </div>
-        <ul class="main__filter__list">
-            <li class="main__filter__items"><i class="fas fa-lg fa-money-bill-wave main__filter__items__icone"></i>Économique</li>
-            <li class="main__filter__items"><i class="fas fa-lg fa-child main__filter__items__icone"></i>Familial</li>
-            <li class="main__filter__items"><i class="fas fa-lg fa-heart main__filter__items__icone"></i>Romantique</li>
-            <li class="main__filter__items"><i class="fas fa-lg fa-dog main__filter__items__icone"></i>Animaux autorisés</li>
-        </ul>
-    </div>
-    
-    <!-- Info -->
-    <div class="main__info">
-        <i id="main__info__icone" class="fas fa-info"></i>
-        <p>Plus de 500 logements disponibles dans cette ville</p>
-    </div>
-    
-
-    <!-- section 1 ***********************************************************************************************************************************************-->
-    <section class="main__section__one">
-        <div class="main__section__hebergements">
-            <h2 class="main__section__title" id="Hébergements">Hébergements à Marseille</h2>
-
-    <!-- First column -->
-            <div class="main__section__column__one">
-                <a href="#" class="section__card__hebergement">
-                    <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                    <div class="section__card__content">
-                        <h4>Auberge la Cannebière</h4>
-                        <p>Nuit à partir de <span class="main__section__price">25€</span></p>
-                        <div class="section__card__star">
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__grey"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="section__card__hebergement">
-                    <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
-                    <div class="section__card__content">
-                        <h4>Hôtel du port</h4>
-                        <p>Nuit à partir de 52<span class="main__section__price">€</span></p>
-                        <div class="section__card__star">
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="section__card__hebergement">
-                    <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
-                    <div class="section__card__content">
-                        <h4>Hôtel Les mouettes</h4>
-                        <p>Nuit à partir de 76<span class="main__section__price">€</span></p>
-                        <div class="section__card__star">
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__grey"></i>
-                        </div>
-                    </div>
-                </a>
+        <!--Filter ***********************************************************************************************************************************************-->
+        <div class="main__filter">
+            <div class="main__filter__title">
+                <h3>Filtres</h3>
             </div>
-        <!-- Second column -->
-            <div class="main__section__column__two">
-                <a href="#" class="section__card__hebergement">
-                    <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
-                    <div class="section__card__content">
-                        <h4>Hôtel de la mer</h4>
-                        <p>Nuit à partir de 46<span class="main__section__price">€</span></p>
-                        <div class="section__card__star">
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__grey"></i>
-                            <i class="fas fa-star star__grey"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="section__card__hebergement">
-                    <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
-                    <div class="section__card__content">
-                        <h4>Auberge Le Panier</h4>
-                        <p>Nuit à partir de <span class="main__section__price">23€</span></p>
-                        <div class="section__card__star">
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__grey"></i>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="section__card__hebergement">
-                    <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
-                    <div class="section__card__content">
-                        <h4>Hôtel chez Amina</h4>
-                        <p>Nuit à partir de 96<span class="main__section__price">€</span></p>
-                        <div class="section__card__star">
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                            <i class="fas fa-star star__blue"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <br>
-            <h3 class="hebergement__showmore">Afficher plus</h3>
-            <br>
+            <ul class="main__filter__list">
+                <li class="main__filter__items"><i
+                        class="fas fa-lg fa-money-bill-wave main__filter__items__icone"></i>Économique</li>
+                <li class="main__filter__items"><i class="fas fa-lg fa-child main__filter__items__icone"></i>Familial
+                </li>
+                <li class="main__filter__items"><i class="fas fa-lg fa-heart main__filter__items__icone"></i>Romantique
+                </li>
+                <li class="main__filter__items"><i class="fas fa-lg fa-dog main__filter__items__icone"></i>Animaux
+                    autorisés</li>
+            </ul>
         </div>
 
-        <!-- populaire ***********************************-->
-        
-        <div class="main__section__populaire">
-            <div class="main__section__populaire__title">
-                <h2>Les plus populaires</h2>
-                <i class="fas fa-lg fa-chart-line"></i>
-            </div>
-            
-            <a href="#" class="section__card__populaire">
-                <img class="populaire__picture" alt="Une chambre en location dans l'agence de voyage reservia" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
-                <div class="section__card__content">
-                    <h4>Hôtel Le soleil du matin</h4>
-                    <p>Nuit à partir de 128<span class="main__section__price">€</span></p>
-                    <div class="section__card__star">
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="section__card__populaire">
-                <img class="populaire__picture" alt="Une chambre en location dans l'agence de voyage reservia" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
-                <div class="section__card__content">
-                    <h4>Au coeur de l'eau Chambre d'hôtes</h4>
-                    <p>Nuit à partir de 71<span class="main__section__price">€</span></p>
-                    <div class="section__card__star">
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__grey"></i>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="section__card__populaire">
-                <img class="populaire__picture" alt="Une chambre en location dans l'agence de voyage reservia" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
-                <div class="section__card__content">
-                    <h4>Hôtel Tout bleu et blanc</h4>
-                    <p>Nuit à partir de 68<span class="main__section__price">€</span></p>
-                    <div class="section__card__star">
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__blue"></i>
-                        <i class="fas fa-star star__grey"></i>
-                    </div>
-                </div>
-            </a>
+        <!-- Info -->
+        <div class="main__info">
+            <i id="main__info__icone" class="fas fa-info"></i>
+            <p>Plus de 500 logements disponibles dans cette ville</p>
         </div>
-    </section>
 
-    <!-- section 2 ***********************************************************************************************************************************************-->
-    <section class="main__section__activités">
-        <h2 id="Activités">Activités à Marseille</h2>
-        <div class="section__activités">
-            <div>
-                <a href="#" class="section__activités__xl">
-                    <img class="activités__picture__xl" alt="activités de l'agence de voyage reservia a marseille" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                    <h4 class="activités__picture__title">Vieux Port</h4>
+
+        <!-- section 1 ***********************************************************************************************************************************************-->
+        <section class="main__section__one">
+            <div class="main__section__hebergements">
+                <h2 class="main__section__title" id="Hébergements">Hébergements à Marseille</h2>
+
+                <!-- First column -->
+                <div class="main__section__column__one">
+                    <a href="#" class="section__card__hebergement">
+                        <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia"
+                            src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <div class="section__card__content">
+                            <h4>Auberge la Cannebière</h4>
+                            <p>Nuit à partir de <span class="main__section__price">25€</span></p>
+                            <div class="section__card__star">
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="section__card__hebergement">
+                        <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia"
+                            src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                        <div class="section__card__content">
+                            <h4>Hôtel du port</h4>
+                            <p>Nuit à partir de 52<span class="main__section__price">€</span></p>
+                            <div class="section__card__star">
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="section__card__hebergement">
+                        <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia"
+                            src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                        <div class="section__card__content">
+                            <h4>Hôtel Les mouettes</h4>
+                            <p>Nuit à partir de 76<span class="main__section__price">€</span></p>
+                            <div class="section__card__star">
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Second column -->
+                <div class="main__section__column__two">
+                    <a href="#" class="section__card__hebergement">
+                        <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia"
+                            src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                        <div class="section__card__content">
+                            <h4>Hôtel de la mer</h4>
+                            <p>Nuit à partir de 46<span class="main__section__price">€</span></p>
+                            <div class="section__card__star">
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__grey"></i>
+                                <i class="fas fa-star star__grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="section__card__hebergement">
+                        <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia"
+                            src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                        <div class="section__card__content">
+                            <h4>Auberge Le Panier</h4>
+                            <p>Nuit à partir de <span class="main__section__price">23€</span></p>
+                            <div class="section__card__star">
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="section__card__hebergement">
+                        <img class="hebergement__picture" alt="Une chambre en location dans l'agence de voyage reservia"
+                            src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                        <div class="section__card__content">
+                            <h4>Hôtel chez Amina</h4>
+                            <p>Nuit à partir de 96<span class="main__section__price">€</span></p>
+                            <div class="section__card__star">
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                                <i class="fas fa-star star__blue"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <br>
+                <h3 class="hebergement__showmore">Afficher plus</h3>
+                <br>
+            </div>
+
+            <!-- populaire ***********************************-->
+
+            <div class="main__section__populaire">
+                <div class="main__section__populaire__title">
+                    <h2>Les plus populaires</h2>
+                    <i class="fas fa-lg fa-chart-line"></i>
+                </div>
+
+                <a href="#" class="section__card__populaire">
+                    <img class="populaire__picture" alt="Une chambre en location dans l'agence de voyage reservia"
+                        src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                    <div class="section__card__content">
+                        <h4>Hôtel Le soleil du matin</h4>
+                        <p>Nuit à partir de 128<span class="main__section__price">€</span></p>
+                        <div class="section__card__star">
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="section__card__populaire">
+                    <img class="populaire__picture" alt="Une chambre en location dans l'agence de voyage reservia"
+                        src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                    <div class="section__card__content">
+                        <h4>Au coeur de l'eau Chambre d'hôtes</h4>
+                        <p>Nuit à partir de 71<span class="main__section__price">€</span></p>
+                        <div class="section__card__star">
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__grey"></i>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="section__card__populaire">
+                    <img class="populaire__picture" alt="Une chambre en location dans l'agence de voyage reservia"
+                        src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                    <div class="section__card__content">
+                        <h4>Hôtel Tout bleu et blanc</h4>
+                        <p>Nuit à partir de 68<span class="main__section__price">€</span></p>
+                        <div class="section__card__star">
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__blue"></i>
+                            <i class="fas fa-star star__grey"></i>
+                        </div>
+                    </div>
                 </a>
             </div>
+        </section>
 
-            <div class="section__activités__bloc__m">
+        <!-- section 2 ***********************************************************************************************************************************************-->
+        <section class="main__section__activités">
+            <h2 id="Activités">Activités à Marseille</h2>
+            <div class="section__activités">
                 <div>
-                    <a href="#" class="section__activités__m">
-                        <img class="activités__picture__m" alt="activités de l'agence de voyage reservia a marseille" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                        <h4 class="activités__picture__title">Fort de Pomègues</h4>
+                    <a href="#" class="section__activités__xl">
+                        <img class="activités__picture__xl" alt="activités de l'agence de voyage reservia a marseille"
+                            src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                        <h4 class="activités__picture__title">Vieux Port</h4>
                     </a>
                 </div>
-                <div>
-                    <a href="#" class="section__activités__m">
-                        <img class="activités__picture__m" alt="activités de l'agence de voyage reservia a marseille" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                        <h4 class="activités__picture__title">îles du Frioul</h4>
-                    </a>
-                </div> 
-            </div>
 
-            <div>
-                <a href="#" class="section__activités__xl">
-                    <img class="activités__picture__xl" alt="activités de l'agence de voyage reservia a marseille" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-                    <h4 class="activités__picture__title">Parc National des Calanques</h4>
-                </a>
-            </div>
+                <div class="section__activités__bloc__m">
+                    <div>
+                        <a href="#" class="section__activités__m">
+                            <img class="activités__picture__m"
+                                alt="activités de l'agence de voyage reservia a marseille"
+                                src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                            <h4 class="activités__picture__title">Fort de Pomègues</h4>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="section__activités__m">
+                            <img class="activités__picture__m"
+                                alt="activités de l'agence de voyage reservia a marseille"
+                                src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                            <h4 class="activités__picture__title">îles du Frioul</h4>
+                        </a>
+                    </div>
+                </div>
 
-            <div class="section__activités__bloc__m">
-                
                 <div>
-                    <a href="#" class="section__activités__m">
-                        <img class="activités__picture__m" alt="activités de l'agence de voyage reservia a marseille" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                        <h4 class="activités__picture__title">Notre-Dame-de-la-Garde</h4>
+                    <a href="#" class="section__activités__xl">
+                        <img class="activités__picture__xl" alt="activités de l'agence de voyage reservia a marseille"
+                            src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                        <h4 class="activités__picture__title">Parc National des Calanques</h4>
                     </a>
                 </div>
-                <div>
-                    <a href="#" class="section__activités__m">
-                        <img class="activités__picture__m" alt="activités de l'agence de voyage reservia a marseille" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                        <h4 class="activités__picture__title">Parc Longchamp</h4>
-                    </a>
-                </div> 
+
+                <div class="section__activités__bloc__m">
+
+                    <div>
+                        <a href="#" class="section__activités__m">
+                            <img class="activités__picture__m"
+                                alt="activités de l'agence de voyage reservia a marseille"
+                                src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                            <h4 class="activités__picture__title">Notre-Dame-de-la-Garde</h4>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="section__activités__m">
+                            <img class="activités__picture__m"
+                                alt="activités de l'agence de voyage reservia a marseille"
+                                src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                            <h4 class="activités__picture__title">Parc Longchamp</h4>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     </main>
-    
+
     <!-- footer ***********************************************************************************************************************************************-->
     <footer>
         <div class="footer__bloc">
