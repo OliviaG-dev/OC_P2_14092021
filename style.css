@@ -13,7 +13,7 @@ a, a:hover, a:focus, a:active {
     --primary-color: #0065FC;
     --tertiary-color: #DEEBFF;
     --secondary-color: #F2F2F2;
-    --box-shadow: -1px 2px 13px 5px rgba(94, 91, 91, 0.47);
+    --box-shadow: -1px 2px 13px 5px rgba(172, 165, 165, 0.47);
 
 }
 
@@ -221,10 +221,10 @@ input:focus{
 
 .main__filter__items{
     list-style: none;
-    /* margin-right: 1rem; */
+    font-weight: 800;
     margin-left: 1rem;
     margin-bottom: 0.5rem;
-    border: 0.2rem var(--secondary-color) solid;
+    border: 0.15rem #cdd0d3 solid;
     padding: 0 0.8rem 0 0.8rem;
     border-radius: 2rem;
     cursor: pointer;
@@ -260,7 +260,7 @@ input:focus{
 }
 
 .main__filter__list {
-    margin-left: -1rem;
+    margin-left: -2rem;
 }
 
 .main__filter__items {
@@ -345,6 +345,7 @@ input:focus{
 }
 
 .hebergement__picture{
+    margin: 0.15rem;
     height:9.5rem;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
@@ -356,7 +357,7 @@ input:focus{
 }
 
 .section__card__content{
-    line-height: 1.8rem; 
+    line-height: 1.5rem; 
     padding-left: 1rem;
 }
 
@@ -394,6 +395,7 @@ input:focus{
 }
 
 .populaire__picture{
+    margin: 0.15rem;
     height: 9rem;
     width: 7rem;
     object-fit: cover;
@@ -505,10 +507,13 @@ input:focus{
         margin: 0 -2rem;
         border-radius: 0rem;
         padding: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
     }
     .main__section__title{
         text-align: start;
         padding-left: initial;
+        margin-bottom: 1.5rem;
     }
 
     .populaire__picture{
@@ -522,6 +527,7 @@ input:focus{
 
     .main__section__hebergements{
         margin: 0 -1rem;
+        padding-top: 2rem;
     }
 
     .hebergement__showmore{
@@ -674,9 +680,9 @@ input:focus{
     }
 }
 
-/* footer */
+/****************************** footer ***************************************/
 
-.footer {
+footer {
     background-color: var(--secondary-color);
     margin-top: 2rem;
     padding: 2rem 0 0 4rem;
@@ -720,3 +726,7 @@ input:focus{
     }
 
 }
+
+/*******************************************************Média*********************************************/
+/*********************************************************************************************************/
+/*********************************************************************************************************/
