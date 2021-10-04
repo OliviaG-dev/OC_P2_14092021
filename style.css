@@ -46,7 +46,6 @@ nav a:hover{
     color: var(--primary-color);
 }
 
-
 /**********************************Header *****************************************/
 
 .header__logo {
@@ -55,7 +54,6 @@ nav a:hover{
     margin-right: auto;
     justify-content: flex-start;
     margin-left: 2em;
-
 }
 
 header {
@@ -75,7 +73,6 @@ main {
 
 .main__search {
     display: flex;
-
 }
 
 .main__describe {
@@ -532,7 +529,6 @@ footer {
         max-width: 100%;
         margin-bottom: 2rem;
         border-radius: 1rem;
-
     }
 
     .section__activités__xl {
@@ -598,7 +594,6 @@ footer {
         display: flex;
         flex-basis: 100%;
         border-bottom: 3px var(--secondary-color) solid;
-
     }
 
     .header__menu__item a:hover {
@@ -606,8 +601,9 @@ footer {
     }
 
     .header__logo {
-        float: left;
         position: absolute;
+        top: 0;
+        left: 0;
         padding-top: 1.1em;
         margin-left: 2em;
     }
