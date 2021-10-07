@@ -201,35 +201,34 @@ input:focus {
 }
 
 .main__section__title {
-    padding-left: 2rem;
-    padding-top: 0.5rem;
-    margin-bottom: 1rem;
+    padding-left: 3rem;
+    margin-bottom: 1.5rem;
+    padding-top: 2.8rem;
 }
 
 .main__section__hebergements {
     background-color: var(--secondary-color);
     flex: 2;
-    height: 45rem;
+    height: 47rem;
     margin-right: 2rem;
     border-radius: 1rem;
-    padding-top: 1rem;
 }
 
 .main__section__column__one {
     display: flex;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     height: 15rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .main__section__column__two {
     display: flex;
     height: 15rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .section__card__hebergement {
-    width: 25%;
+    width: 28%;
     display: flex;
     flex-direction: column;
     border: 0.1rem white solid;
@@ -253,7 +252,7 @@ input:focus {
 .hebergement__showmore {
     font-weight: 700;
     font-size: 1.2rem;
-    padding: 3rem 0 0 3rem;
+    padding: 2.8rem 0 0 3rem;
 }
 
 .section__card__content {
@@ -278,28 +277,31 @@ input:focus {
 .main__section__populaire {
     background-color: var(--secondary-color);
     flex: 1;
-    height: 45rem;
+    height: 47rem;
     border-radius: 1rem;
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .main__section__populaire__title {
     display: inline-flex;
     width: 100%;
+    align-items: center;
     justify-content: space-around;
+    padding-top: 2.8rem;
+    padding-bottom: 1.5rem;
 }
 
 .populaire__picture {
     margin: 0.15rem;
     height: 9rem;
-    width: 7rem;
+    width: 8rem;
     object-fit: cover;
     border-radius: 1rem 0 0 1rem;
+    margin-right: 1rem;
 }
 
 .section__card__populaire {
@@ -309,6 +311,7 @@ input:focus {
     background-color: #fff;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
 }
 
 .section__card__populaire:hover {
@@ -316,15 +319,23 @@ input:focus {
     transition: transform ease-in.2s;
 }
 
+.content__populaire__text{
+    padding-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.section__card__star__populaire{
+    padding-top: 3.5rem;
+}
 /***********************Section 2***************************************/
 /***********************************************************************/
 
 /********************Activités****************************/
 
 #Activités {
-    padding-left: 2rem;
+    padding-left: 4.8rem;
     margin-top: 3.5em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.8rem;
 }
 
 .activités__picture__title {
@@ -340,7 +351,6 @@ input:focus {
 
 .section__activités {
     display: flex;
-    padding: 1rem;
     justify-content: space-evenly;
 }
 
@@ -430,15 +440,6 @@ footer {
         flex: 1;
     }
 
-    .section__card__populaire {
-        width: auto;
-    }
-
-    .section__card__populaire {
-        width: 100%;
-        margin-top: 2rem;
-    }
-
     .activités__picture__title {
         font-size: 0.9rem;
     }
@@ -496,6 +497,7 @@ footer {
 
     .main__section__populaire {
         margin-left: 0.2rem;
+        text-align: left;
     }
 
     .section__card__populaire {
@@ -749,6 +751,7 @@ footer {
         padding: 1rem;
         padding-top: 2rem;
         padding-bottom: 3rem;
+        text-align: left;
     }
 
     .main__section__title {
@@ -833,6 +836,10 @@ footer {
     .hebergement__showmore {
         text-align: start;
         padding: 0;
+    }
+
+    #Activités {
+        padding-left: 1rem;
     }
 
     footer {
